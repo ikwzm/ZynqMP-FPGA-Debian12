@@ -163,9 +163,9 @@ EOT
 
 ```console
 debian12-rootfs# apt install -y ifupdown
-debian12-rootfs# cat <<EOT > /etc/network/interfaces.d/end0
-allow-hotplug end0
-iface end0 inet dhcp
+debian12-rootfs# cat <<EOT > /etc/network/interfaces.d/eth0
+allow-hotplug eth0
+iface eth0 inet dhcp
 EOT
 ````
 

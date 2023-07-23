@@ -70,9 +70,9 @@ EOT
 ##### Setup Network
 
 apt install -y ifupdown
-cat <<EOT > /etc/network/interfaces.d/end0
-allow-hotplug end0
-iface end0 inet dhcp
+cat <<EOT > /etc/network/interfaces.d/eth0
+allow-hotplug eth0
+iface eth0 inet dhcp
 EOT
 
 ##### Setup /lib/firmware
