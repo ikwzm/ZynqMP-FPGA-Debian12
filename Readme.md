@@ -64,8 +64,8 @@ Build
 * [Build Boot Loader for UltraZed-EG-IOCC](doc/build/boot-ultrazed-eg-iocc.md)
 * [Build Boot Loader for Ultra96](doc/build/boot-ultra96.md)
 * [Build Boot Loader for Ultra96-V2](doc/build/boot-ultra96v2.md)
-* [Build Linux Kernel](doc/build/linux-5.15.108-zynqmp-fpga-generic.md)
-* [Build Debian11 RootFS](doc/build/debian11-rootfs.md)
+* [Build Linux Kernel](doc/build/linux-kernel-6.1.38-zynqmp-fpga-generic.md)
+* [Build Debian12 RootFS](doc/build/debian12-rootfs.md)
 
 
 Other Projects
