@@ -28,8 +28,8 @@ This Repository provides a Linux Boot Image(U-boot, Kernel, Debian 12 RootFS) fo
   + PMU Firmware(Platform Management Unit Firmware)
   + BL31(ARM Trusted Firmware Boot Loader stage 3-1)
   + U-Boot xilinx-v2019.2 (customized)
-* Linux Kernel Version 6.1.38-zynqmp-fpga-generic
-  + [linux-stable 5.15.108](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git//tag/?h=v6.1.38)
+* Linux Kernel Version 6.1.70-zynqmp-fpga-generic
+  + [linux-stable 6.1.70](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git//tag/?h=v6.1.70)
   + Patched equivalent to linux-xlnx v2023.1
   + Enable Device Tree Overlay with Configuration File System
   + Enable FPGA Manager
