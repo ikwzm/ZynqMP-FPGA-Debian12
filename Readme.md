@@ -28,8 +28,8 @@ This Repository provides a Linux Boot Image(U-boot, Kernel, Debian 12 RootFS) fo
   + PMU Firmware(Platform Management Unit Firmware)
   + BL31(ARM Trusted Firmware Boot Loader stage 3-1)
   + U-Boot xilinx-v2019.2 (customized)
-* [Linux Kernel Version 6.1.38-zynqmp-fpga-generic](https://github.com/ikwzm/ZynqMP-FPGA-Linux-Kernel-6.1/tree/6.1.38-zynqmp-fpga-generic-2)
-  + [linux-stable 6.1.38](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git//tag/?h=v6.1.38)
+* [Linux Kernel Version 6.1.70-zynqmp-fpga-generic](https://github.com/ikwzm/ZynqMP-FPGA-Linux-Kernel-6.1/tree/6.1.70-zynqmp-fpga-generic-2)
+  + [linux-stable 6.1.70](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git//tag/?h=v6.1.70)
   + Patched equivalent to linux-xlnx v2023.1
   + Enable Device Tree Overlay with Configuration File System
   + Enable FPGA Manager
@@ -55,6 +55,7 @@ For Linux Kernel and Debian11 RootFS, please refer to the respective release tag
 
 | Release  | Released  | Debian Version | Linux Kernel Version           | Release Tag |
 |:---------|:----------|:---------------|:-------------------------------|:------------|
+| v4.0.0   | 2024-1-10 | Debian 12.4    | 6.1.70-zynqmp-fpga-generic-1   | [v4.0.0](https://github.com/ikwzm/ZynqMP-FPGA-Debian12/tree/v4.0.0)
 | v1.0.0   | 2023-7-23 | Debian 12.1    | 6.1.38-zynqmp-fpga-generic-2   | [v1.0.0](https://github.com/ikwzm/ZynqMP-FPGA-Debian12/tree/v1.0.0)
 
 Install
@@ -74,7 +75,7 @@ Build
 * [Build Boot Loader for UltraZed-EG-IOCC](doc/build/boot-ultrazed-eg-iocc.md)
 * [Build Boot Loader for Ultra96](doc/build/boot-ultra96.md)
 * [Build Boot Loader for Ultra96-V2](doc/build/boot-ultra96v2.md)
-* [Build Linux Kernel](doc/build/linux-kernel-6.1.38-zynqmp-fpga-generic.md)
+* [Build Linux Kernel](doc/build/linux-kernel-6.1.70-zynqmp-fpga-generic.md)
 * [Build Debian12 RootFS](doc/build/debian12-rootfs.md)
 
 

@@ -20,28 +20,28 @@ root@debian-fpga:~#
 
 #### Install Linux Image Package
 
-Since linux-image-6.1.38-zynqmp-fpga-generic_6.1.38-zynqmp-fpga-generic-2_arm64.deb is already pre-installed in debian11-rootfs.tgz, this The process can be omitted.
+Since linux-image-6.1.70-zynqmp-fpga-generic_6.1.70-zynqmp-fpga-generic-1_arm64.deb is already pre-installed in debian11-rootfs.tgz, this The process can be omitted.
 
 ```console
 root@debian-fpga:~# cd /home/fpga/debian
-root@debian-fpga:/home/fpga/debian# dpkg -i linux-image-6.1.38-zynqmp-fpga-generic_6.1.38-zynqmp-fpga-generic-2_arm64.deb
-(Reading database ... 29870 files and directories currently installed.)
-Preparing to unpack linux-image-6.1.38-zynqmp-fpga-generic_6.1.38-zynqmp-fpga-generic-2_arm64.deb ...
-Unpacking linux-image-6.1.38-zynqmp-fpga-generic (6.1.38-zynqmp-fpga-generic-2) over (6.1.38-zynqmp-fpga-generic-2) ...
-Setting up linux-image-6.1.38-zynqmp-fpga-generic (6.1.38-zynqmp-fpga-generic-2) ...
+root@debian-fpga:/home/fpga/debian# dpkg -i linux-image-6.1.70-zynqmp-fpga-generic_6.1.70-zynqmp-fpga-generic-1_arm64.deb
+(Reading database ... 48245 files and directories currently installed.)
+Preparing to unpack linux-image-6.1.70-zynqmp-fpga-generic_6.1.70-zynqmp-fpga-generic-1_arm64.deb ...
+Unpacking linux-image-6.1.70-zynqmp-fpga-generic (6.1.70-zynqmp-fpga-generic-1) over (6.1.70-zynqmp-fpga-generic-1) ...
+Setting up linux-image-6.1.70-zynqmp-fpga-generic (6.1.70-zynqmp-fpga-generic-1) ...
 ```
 
 #### Install Linux Headers Package
 
 ```console
 root@debian-fpga:~# cd /home/fpga/debian
-root@debian-fpga:/home/fpga/debian# dpkg -i linux-headers-6.1.38-zynqmp-fpga-generic_6.1.38-zynqmp-fpga-generic-2_arm64.deb
-Selecting previously unselected package linux-headers-6.1.38-zynqmp-fpga-generic.
-(Reading database ... 29870 files and directories currently installed.)
-Preparing to unpack linux-headers-6.1.38-zynqmp-fpga-generic_6.1.38-zynqmp-fpga-generic-2_arm64.deb ...
-Unpacking linux-headers-6.1.38-zynqmp-fpga-generic (6.1.38-zynqmp-fpga-generic-2) ...
-Setting up linux-headers-6.1.38-zynqmp-fpga-generic (6.1.38-zynqmp-fpga-generic-2) ...
-make: Entering directory '/usr/src/linux-headers-6.1.38-zynqmp-fpga-generic'
+root@debian-fpga:/home/fpga/debian# dpkg -i linux-headers-6.1.70-zynqmp-fpga-generic_6.1.70-zynqmp-fpga-generic-1_arm64.deb
+Selecting previously unselected package linux-headers-6.1.70-zynqmp-fpga-generic.
+(Reading database ... 30894 files and directories currently installed.)
+Preparing to unpack linux-headers-6.1.70-zynqmp-fpga-generic_6.1.70-zynqmp-fpga-generic-1_arm64.deb ...
+Unpacking linux-headers-6.1.70-zynqmp-fpga-generic (6.1.70-zynqmp-fpga-generic-1) ...
+Setting up linux-headers-6.1.70-zynqmp-fpga-generic (6.1.70-zynqmp-fpga-generic-1) ...
+make: Entering directory '/usr/src/linux-headers-6.1.70-zynqmp-fpga-generic'
   SYNC    include/config/auto.conf.cmd
   HOSTCC  scripts/basic/fixdep
   HOSTCC  scripts/kconfig/conf.o
@@ -59,12 +59,6 @@ make: Entering directory '/usr/src/linux-headers-6.1.38-zynqmp-fpga-generic'
 *
 * Restart config...
 *
-*
-* ARMv8.5 architectural features
-*
-Branch Target Identification support (ARM64_BTI) [Y/n/?] y
-Enable support for E0PD (ARM64_E0PD) [Y/n/?] y
-Memory Tagging Extension support (ARM64_MTE) [Y/n/?] (NEW)
 *
 * General architecture-dependent options
 *
@@ -100,10 +94,6 @@ Enable register zeroing on function exit (ZERO_CALL_USED_REGS) [N/y/?] (NEW)
 * KCSAN: dynamic data race detector
 *
 KCSAN: dynamic data race detector (KCSAN) [N/y/?] (NEW)
-*
-* KASAN: dynamic memory safety error detector
-*
-KASAN: dynamic memory safety error detector (KASAN) [N/y/?] (NEW)
 *
 * Kernel Testing and Coverage
 *
@@ -147,30 +137,30 @@ Memtest (MEMTEST) [N/y/?] n
   HOSTCC  scripts/mod/file2alias.o
   HOSTCC  scripts/mod/sumversion.o
   HOSTLD  scripts/mod/modpost
-make: Leaving directory '/usr/src/linux-headers-6.1.38-zynqmp-fpga-generic'
+make: Leaving directory '/usr/src/linux-headers-6.1.70-zynqmp-fpga-generic'
 ```
 
 #### Install fclkcfg Device Driver and Services Package
 
 ```console
 root@debian-fpga:~# cd /home/fpga/debian
-root@debian-fpga:/home/fpga/debian# dpkg -i fclkcfg-6.1.38-zynqmp-fpga-generic_1.7.3-1_arm64.deb
-Selecting previously unselected package fclkcfg-6.1.38-zynqmp-fpga-generic.
-(Reading database ... 47194 files and directories currently installed.)
-Preparing to unpack fclkcfg-6.1.38-zynqmp-fpga-generic_1.7.3-1_arm64.deb ...
-Unpacking fclkcfg-6.1.38-zynqmp-fpga-generic (1.7.3-1) ...
-Setting up fclkcfg-6.1.38-zynqmp-fpga-generic (1.7.3-1) ...
+root@debian-fpga:/home/fpga/debian# dpkg -i fclkcfg-6.1.70-zynqmp-fpga-generic_1.7.3-1_arm64.deb
+Selecting previously unselected package fclkcfg-6.1.70-zynqmp-fpga-generic.
+(Reading database ... 48233 files and directories currently installed.)
+Preparing to unpack fclkcfg-6.1.70-zynqmp-fpga-generic_1.7.3-1_arm64.deb ...
+Unpacking fclkcfg-6.1.70-zynqmp-fpga-generic (1.7.3-1) ...
+Setting up fclkcfg-6.1.70-zynqmp-fpga-generic (1.7.3-1) ...
 ```
 
 #### Install u-dma-buf Device Driver and Services Package
 
 ```console
 root@debian-fpga:~# cd /home/fpga/debian
-root@debian-fpga:/home/fpga/debian# dpkg -i u-dma-buf-6.1.38-zynqmp-fpga-generic_4.4.4-0_arm64.deb
-Selecting previously unselected package u-dma-buf-6.1.38-zynqmp-fpga-generic.
-(Reading database ... 47200 files and directories currently installed.)
-Preparing to unpack u-dma-buf-6.1.38-zynqmp-fpga-generic_4.4.4-0_arm64.deb ...
-Unpacking u-dma-buf-6.1.38-zynqmp-fpga-generic (4.4.4-0) ...
-Setting up u-dma-buf-6.1.38-zynqmp-fpga-generic (4.4.4-0) ...
+root@debian-fpga:/home/fpga/debian# dpkg -i u-dma-buf-6.1.70-zynqmp-fpga-generic_4.5.2-0_arm64.deb
+Selecting previously unselected package u-dma-buf-6.1.70-zynqmp-fpga-generic.
+(Reading database ... 48239 files and directories currently installed.)
+Preparing to unpack u-dma-buf-6.1.70-zynqmp-fpga-generic_4.5.2-0_arm64.deb ...
+Unpacking u-dma-buf-6.1.70-zynqmp-fpga-generic (4.5.2-0) ...
+Setting up u-dma-buf-6.1.70-zynqmp-fpga-generic (4.5.2-0) ...
 ```
 
