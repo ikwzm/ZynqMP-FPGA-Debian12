@@ -22,7 +22,7 @@ This Repository provides a Linux Boot Image(U-boot, Kernel, Debian 12 RootFS) fo
   + Ultra96    : Xilinx Zynq UltraScale+ MPSoC development board based on the Linaro 96Boards specification. 
   + Ultra96-V2 : updates and refreshes the Ultra96 product that was released in 2018.
   + KV260      : Kria KV260 Vision AI Startar Kit.
-  + KR260      : Kria KR260 Robotics  Startar Kit.
+  + ~KR260      : Kria KR260 Robotics  Startar Kit.~
 * Boot Loader
   + FSBL(First Stage Boot Loader for ZynqMP)
   + PMU Firmware(Platform Management Unit Firmware)
@@ -55,7 +55,7 @@ Install
   + [Ultra96](doc/install/ultra96.md)
   + [Ultra96-V2](doc/install/ultra96v2.md)
   + [KV260](doc/install/kv260.md)
-  + [KR260](doc/install/kr260.md)
+  + ~[KR260](doc/install/kr260.md)~
 
 
 Build 
