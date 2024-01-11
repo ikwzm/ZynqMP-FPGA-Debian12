@@ -247,7 +247,7 @@ ii  libxtables12:arm64                     1.8.9-2                              
 ii  libxxhash0:arm64                       0.8.1-1                                 arm64        shared library for xxhash
 ii  libyaml-0-2:arm64                      0.2.5-1                                 arm64        Fast YAML 1.1 parser and emitter library
 ii  libzstd1:arm64                         1.5.4+dfsg2-5                           arm64        fast lossless compression algorithm
-ii  linux-image-6.1.70-zynqmp-fpga-generic 6.1.70-zynqmp-fpga-generic-1            arm64        Linux kernel, version 6.1.70-zynqmp-fpga-generic
+ii  linux-image-6.1.70-zynqmp-fpga-generic 6.1.70-zynqmp-fpga-generic-2            arm64        Linux kernel, version 6.1.70-zynqmp-fpga-generic
 ii  linux-libc-dev:arm64                   6.1.69-1                                arm64        Linux support headers for userspace development
 ii  locales                                2.36-9+deb12u3                          all          GNU C Library: National Language (locale) data [support]
 ii  login                                  1:4.13+dfsg1-1+b1                       arm64        system login tools

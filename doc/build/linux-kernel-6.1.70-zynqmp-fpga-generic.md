@@ -3,14 +3,14 @@
 #### Download FPGA-SoC-Linux-Kernel-6.1
 
 ```console
-shell$ wget https://github.com/ikwzm/ZynqMP-FPGA-Linux-Kernel-6.1/archive/refs/tags/6.1.70-zynqmp-fpga-generic-1.tar.gz
-shell$ tar xfz 6.1.70-zynqmp-fpga-generic-1.tar.gz
+shell$ wget https://github.com/ikwzm/ZynqMP-FPGA-Linux-Kernel-6.1/archive/refs/tags/6.1.70-zynqmp-fpga-generic-2.tar.gz
+shell$ tar xfz 6.1.70-zynqmp-fpga-generic-2.tar.gz
 ```
 
 #### Setup parameters
 
 ```console
-shell$ export LINUX_KERNEL_REPOSITORY=ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-1
+shell$ export LINUX_KERNEL_REPOSITORY=ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-2
 shell$ export LINUX_KERNEL_VERSION=6.1.70
 shell$ export LINUX_KERNEL_RELEASE=$LINUX_KERNEL_VERSION-zynqmp-fpga-generic
 ```
@@ -34,16 +34,16 @@ shell$ cp $LINUX_KERNEL_REPOSITORY/linux-headers-$LINUX_KERNEL_RELEASE_*.deb ./d
 
 ```console
 shell$ bash $LINUX_KERNEL_REPOSITORY/scripts/install-linux-$LINUX_KERNEL_RELEASE.sh -d ./target/Kv260/boot -U -v kv260
-# SCRIPT NAME     =  ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-1/scripts/install-linux-6.1.70-zynqmp-fpga-generic.sh
+# SCRIPT NAME     =  ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-2/scripts/install-linux-6.1.70-zynqmp-fpga-generic.sh
 # SCRIPT VERSION  =  0.1
 # KERNEL_RELEASE  =  6.1.70-zynqmp-fpga-generic
-# BUILD_VERSION   =  1
+# BUILD_VERSION   =  2
 # TARGET          =  kv260_revB
 # TARGET_DIRECTRY =  ./target/Kv260/boot
 install -d ./target/Kv260/boot
-gzip -d -c /home/ichiro/work2/ZynqMP-FPGA-Debian12/ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-1/vmlinuz-6.1.70-zynqmp-fpga-generic-1 > ./target/Kv260/boot/image-6.1.70-zynqmp-fpga-generic
+gzip -d -c /home/ichiro/work2/ZynqMP-FPGA-Debian12/ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-2/vmlinuz-6.1.70-zynqmp-fpga-generic-2 > ./target/Kv260/boot/image-6.1.70-zynqmp-fpga-generic
 # do_install_dtb(kv260_revB)
-cp /home/ichiro/work2/ZynqMP-FPGA-Debian12/ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-1/devicetrees/6.1.70-zynqmp-fpga-generic-1/zynqmp-kv260-revB.dtb ./target/Kv260/boot/devicetree-6.1.70-zynqmp-fpga-generic-kv260-revB.dtb
+cp /home/ichiro/work2/ZynqMP-FPGA-Debian12/ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-2/devicetrees/6.1.70-zynqmp-fpga-generic-2/zynqmp-kv260-revB.dtb ./target/Kv260/boot/devicetree-6.1.70-zynqmp-fpga-generic-kv260-revB.dtb
 dtc -I dtb -O dts --symbols -o ./target/Kv260/boot/devicetree-6.1.70-zynqmp-fpga-generic-kv260-revB.dts ./target/Kv260/boot/devicetree-6.1.70-zynqmp-fpga-generic-kv260-revB.dtb
 # do_generate_uenv(kv260_revB)
 # cat ... > ./target/Kv260/boot/uEnv-linux-6.1.70-zynqmp-fpga-generic.txt
@@ -53,16 +53,16 @@ dtc -I dtb -O dts --symbols -o ./target/Kv260/boot/devicetree-6.1.70-zynqmp-fpga
 
 ```console
 shell$ bash $LINUX_KERNEL_REPOSITORY/scripts/install-linux-$LINUX_KERNEL_RELEASE.sh -d ./target/Kr260/boot -U -v kr260
-# SCRIPT NAME     =  ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-1/scripts/install-linux-6.1.70-zynqmp-fpga-generic.sh
+# SCRIPT NAME     =  ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-2/scripts/install-linux-6.1.70-zynqmp-fpga-generic.sh
 # SCRIPT VERSION  =  0.1
 # KERNEL_RELEASE  =  6.1.70-zynqmp-fpga-generic
-# BUILD_VERSION   =  1
+# BUILD_VERSION   =  2
 # TARGET          =  kr260_revB
 # TARGET_DIRECTRY =  ./target/Kr260/boot
 install -d ./target/Kr260/boot
-gzip -d -c /home/ichiro/work2/ZynqMP-FPGA-Debian12/ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-1/vmlinuz-6.1.70-zynqmp-fpga-generic-1 > ./target/Kr260/boot/image-6.1.70-zynqmp-fpga-generic
+gzip -d -c /home/ichiro/work2/ZynqMP-FPGA-Debian12/ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-2/vmlinuz-6.1.70-zynqmp-fpga-generic-2 > ./target/Kr260/boot/image-6.1.70-zynqmp-fpga-generic
 # do_install_dtb(kr260_revB)
-cp /home/ichiro/work2/ZynqMP-FPGA-Debian12/ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-1/devicetrees/6.1.70-zynqmp-fpga-generic-1/zynqmp-kr260-revB.dtb ./target/Kr260/boot/devicetree-6.1.70-zynqmp-fpga-generic-kr260-revB.dtb
+cp /home/ichiro/work2/ZynqMP-FPGA-Debian12/ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-2/devicetrees/6.1.70-zynqmp-fpga-generic-2/zynqmp-kr260-revB.dtb ./target/Kr260/boot/devicetree-6.1.70-zynqmp-fpga-generic-kr260-revB.dtb
 dtc -I dtb -O dts --symbols -o ./target/Kr260/boot/devicetree-6.1.70-zynqmp-fpga-generic-kr260-revB.dts ./target/Kr260/boot/devicetree-6.1.70-zynqmp-fpga-generic-kr260-revB.dtb
 # do_generate_uenv(kr260_revB)
 # cat ... > ./target/Kr260/boot/uEnv-linux-6.1.70-zynqmp-fpga-generic.txt
@@ -72,16 +72,16 @@ dtc -I dtb -O dts --symbols -o ./target/Kr260/boot/devicetree-6.1.70-zynqmp-fpga
 
 ```console
 shell$ bash $LINUX_KERNEL_REPOSITORY/scripts/install-linux-$LINUX_KERNEL_RELEASE.sh -d ./target/Ultra96/boot -U -v ultra96
-# SCRIPT NAME     =  ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-1/scripts/install-linux-6.1.70-zynqmp-fpga-generic.sh
+# SCRIPT NAME     =  ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-2/scripts/install-linux-6.1.70-zynqmp-fpga-generic.sh
 # SCRIPT VERSION  =  0.1
 # KERNEL_RELEASE  =  6.1.70-zynqmp-fpga-generic
-# BUILD_VERSION   =  1
+# BUILD_VERSION   =  2
 # TARGET          =  ultra96
 # TARGET_DIRECTRY =  ./target/Ultra96/boot
 install -d ./target/Ultra96/boot
-gzip -d -c /home/ichiro/work2/ZynqMP-FPGA-Debian12/ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-1/vmlinuz-6.1.70-zynqmp-fpga-generic-1 > ./target/Ultra96/boot/image-6.1.70-zynqmp-fpga-generic
+gzip -d -c /home/ichiro/work2/ZynqMP-FPGA-Debian12/ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-2/vmlinuz-6.1.70-zynqmp-fpga-generic-2 > ./target/Ultra96/boot/image-6.1.70-zynqmp-fpga-generic
 # do_install_dtb(ultra96)
-cp /home/ichiro/work2/ZynqMP-FPGA-Debian12/ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-1/devicetrees/6.1.70-zynqmp-fpga-generic-1/avnet-ultra96-rev1.dtb ./target/Ultra96/boot/devicetree-6.1.70-zynqmp-fpga-generic-ultra96.dtb
+cp /home/ichiro/work2/ZynqMP-FPGA-Debian12/ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-2/devicetrees/6.1.70-zynqmp-fpga-generic-2/avnet-ultra96-rev1.dtb ./target/Ultra96/boot/devicetree-6.1.70-zynqmp-fpga-generic-ultra96.dtb
 dtc -I dtb -O dts --symbols -o ./target/Ultra96/boot/devicetree-6.1.70-zynqmp-fpga-generic-ultra96.dts ./target/Ultra96/boot/devicetree-6.1.70-zynqmp-fpga-generic-ultra96.dtb
 # do_generate_uenv(ultra96)
 # cat ... > ./target/Ultra96/boot/uEnv-linux-6.1.70-zynqmp-fpga-generic.txt
@@ -91,16 +91,16 @@ dtc -I dtb -O dts --symbols -o ./target/Ultra96/boot/devicetree-6.1.70-zynqmp-fp
 
 ```console
 shell$ bash $LINUX_KERNEL_REPOSITORY/scripts/install-linux-$LINUX_KERNEL_RELEASE.sh -d ./target/Ultra96-V2/boot -U -v ultra96v2
-# SCRIPT NAME     =  ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-1/scripts/install-linux-6.1.70-zynqmp-fpga-generic.sh
+# SCRIPT NAME     =  ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-2/scripts/install-linux-6.1.70-zynqmp-fpga-generic.sh
 # SCRIPT VERSION  =  0.1
 # KERNEL_RELEASE  =  6.1.70-zynqmp-fpga-generic
-# BUILD_VERSION   =  1
+# BUILD_VERSION   =  2
 # TARGET          =  ultra96v2
 # TARGET_DIRECTRY =  ./target/Ultra96-V2/boot
 install -d ./target/Ultra96-V2/boot
-gzip -d -c /home/ichiro/work2/ZynqMP-FPGA-Debian12/ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-1/vmlinuz-6.1.70-zynqmp-fpga-generic-1 > ./target/Ultra96-V2/boot/image-6.1.70-zynqmp-fpga-generic
+gzip -d -c /home/ichiro/work2/ZynqMP-FPGA-Debian12/ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-2/vmlinuz-6.1.70-zynqmp-fpga-generic-2 > ./target/Ultra96-V2/boot/image-6.1.70-zynqmp-fpga-generic
 # do_install_dtb(ultra96v2)
-cp /home/ichiro/work2/ZynqMP-FPGA-Debian12/ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-1/devicetrees/6.1.70-zynqmp-fpga-generic-1/avnet-ultra96v2-rev1.dtb ./target/Ultra96-V2/boot/devicetree-6.1.70-zynqmp-fpga-generic-ultra96v2.dtb
+cp /home/ichiro/work2/ZynqMP-FPGA-Debian12/ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-2/devicetrees/6.1.70-zynqmp-fpga-generic-2/avnet-ultra96v2-rev1.dtb ./target/Ultra96-V2/boot/devicetree-6.1.70-zynqmp-fpga-generic-ultra96v2.dtb
 dtc -I dtb -O dts --symbols -o ./target/Ultra96-V2/boot/devicetree-6.1.70-zynqmp-fpga-generic-ultra96v2.dts ./target/Ultra96-V2/boot/devicetree-6.1.70-zynqmp-fpga-generic-ultra96v2.dtb
 # do_generate_uenv(ultra96v2)
 # cat ... > ./target/Ultra96-V2/boot/uEnv-linux-6.1.70-zynqmp-fpga-generic.txt
@@ -110,16 +110,16 @@ dtc -I dtb -O dts --symbols -o ./target/Ultra96-V2/boot/devicetree-6.1.70-zynqmp
 
 ```console
 shell$ bash $LINUX_KERNEL_REPOSITORY/scripts/install-linux-$LINUX_KERNEL_RELEASE.sh -d ./target/UltraZed-EG-IOCC/boot -U -v UltraZed-EG-IOCC
-# SCRIPT NAME     =  ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-1/scripts/install-linux-6.1.70-zynqmp-fpga-generic.sh
+# SCRIPT NAME     =  ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-2/scripts/install-linux-6.1.70-zynqmp-fpga-generic.sh
 # SCRIPT VERSION  =  0.1
 # KERNEL_RELEASE  =  6.1.70-zynqmp-fpga-generic
-# BUILD_VERSION   =  1
+# BUILD_VERSION   =  2
 # TARGET          =  uz3eg_iocc
 # TARGET_DIRECTRY =  ./target/UltraZed-EG-IOCC/boot
 install -d ./target/UltraZed-EG-IOCC/boot
-gzip -d -c /home/ichiro/work2/ZynqMP-FPGA-Debian12/ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-1/vmlinuz-6.1.70-zynqmp-fpga-generic-1 > ./target/UltraZed-EG-IOCC/boot/image-6.1.70-zynqmp-fpga-generic
+gzip -d -c /home/ichiro/work2/ZynqMP-FPGA-Debian12/ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-2/vmlinuz-6.1.70-zynqmp-fpga-generic-2 > ./target/UltraZed-EG-IOCC/boot/image-6.1.70-zynqmp-fpga-generic
 # do_install_dtb(uz3eg_iocc)
-cp /home/ichiro/work2/ZynqMP-FPGA-Debian12/ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-1/devicetrees/6.1.70-zynqmp-fpga-generic-1/zynqmp-uz3eg-iocc.dtb ./target/UltraZed-EG-IOCC/boot/devicetree-6.1.70-zynqmp-fpga-generic-uz3eg-iocc.dtb
+cp /home/ichiro/work2/ZynqMP-FPGA-Debian12/ZynqMP-FPGA-Linux-Kernel-6.1-6.1.70-zynqmp-fpga-generic-2/devicetrees/6.1.70-zynqmp-fpga-generic-2/zynqmp-uz3eg-iocc.dtb ./target/UltraZed-EG-IOCC/boot/devicetree-6.1.70-zynqmp-fpga-generic-uz3eg-iocc.dtb
 dtc -I dtb -O dts --symbols -o ./target/UltraZed-EG-IOCC/boot/devicetree-6.1.70-zynqmp-fpga-generic-uz3eg-iocc.dts ./target/UltraZed-EG-IOCC/boot/devicetree-6.1.70-zynqmp-fpga-generic-uz3eg-iocc.dtb
 # do_generate_uenv(uz3eg_iocc)
 # cat ... > ./target/UltraZed-EG-IOCC/boot/uEnv-linux-6.1.70-zynqmp-fpga-generic.txt

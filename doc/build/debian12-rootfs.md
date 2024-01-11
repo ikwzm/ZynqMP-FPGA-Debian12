@@ -21,7 +21,7 @@ shell$ sudo debootstrap --arch=arm64 --foreign $distro                          
 shell$ sudo cp /usr/bin/qemu-aarch64-static                                                         $PWD/$targetdir/usr/bin
 shell$ sudo cp /etc/resolv.conf                                                                     $PWD/$targetdir/etc
 shell$ sudo cp scripts/build-debian12-rootfs-with-qemu.sh                                           $PWD/$targetdir
-shell$ sudo cp debian/linux-image-6.1.70-zynqmp-fpga-generic_6.1.70-zynqmp-fpga-generic-1_arm64.deb $PWD/$targetdir
+shell$ sudo cp debian/linux-image-6.1.70-zynqmp-fpga-generic_6.1.70-zynqmp-fpga-generic-2_arm64.deb $PWD/$targetdir
 ```
 
 If you get an error like the following, debootstrap does not yet support bookworm in your environment.
@@ -238,7 +238,7 @@ debian12-rootfs# apt install -y haveged
 
 ```console
 debian12-rootfs# mkdir /mnt/boot
-debian12-rootfs# dpkg -i linux-image-6.1.70-zynqmp-fpga-generic_6.1.70-zynqmp-fpga-generic-1_arm64.deb
+debian12-rootfs# dpkg -i linux-image-6.1.70-zynqmp-fpga-generic_6.1.70-zynqmp-fpga-generic-2_arm64.deb
 ```
 
 ##### Clean APT Cache
@@ -259,7 +259,7 @@ debian12-rootfs# dpkg -l > dpkg-list.txt
 debian12-rootfs# exit
 shell$ sudo rm -f $PWD/$targetdir/usr/bin/qemu-aarch64-static
 shell$ sudo rm -f $PWD/$targetdir/build-debian12-rootfs-with-qemu.sh
-shell$ sudo rm -f $PWD/$targetdir/linux-image-6.1.70-zynqmp-fpga-generic_6.1.70-zynqmp-fpga-generic-1_arm64.deb
+shell$ sudo rm -f $PWD/$targetdir/linux-image-6.1.70-zynqmp-fpga-generic_6.1.70-zynqmp-fpga-generic-2_arm64.deb
 shell$ sudo mv    $PWD/$targetdir/dpkg-list.txt files/debian12-dpkg-list.txt
 ```
 
