@@ -22,7 +22,7 @@ This Repository provides a Linux Boot Image(U-boot, Kernel, Debian 12 RootFS) fo
   + Ultra96    : Xilinx Zynq UltraScale+ MPSoC development board based on the Linaro 96Boards specification. 
   + Ultra96-V2 : updates and refreshes the Ultra96 product that was released in 2018.
   + KV260      : Kria KV260 Vision AI Startar Kit.
-  + KR260      : Kria KR260 Robotics  Startar Kit.
+  + ~KR260      : Kria KR260 Robotics  Startar Kit.~
 * Boot Loader
   + FSBL(First Stage Boot Loader for ZynqMP)
   + PMU Firmware(Platform Management Unit Firmware)
@@ -55,7 +55,7 @@ For Linux Kernel and Debian11 RootFS, please refer to the respective release tag
 
 | Release  | Released  | Debian Version | Linux Kernel Version           | Release Tag |
 |:---------|:----------|:---------------|:-------------------------------|:------------|
-| v4.0.0   | 2024-1-10 | Debian 12.4    | 6.1.70-zynqmp-fpga-generic-1   | [v4.0.0](https://github.com/ikwzm/ZynqMP-FPGA-Debian12/tree/v4.0.0)
+| v4.0.1   | 2024-1-11 | Debian 12.4    | 6.1.70-zynqmp-fpga-generic-1   | [v4.0.1](https://github.com/ikwzm/ZynqMP-FPGA-Debian12/tree/v4.0.1)
 | v1.0.0   | 2023-7-23 | Debian 12.1    | 6.1.38-zynqmp-fpga-generic-2   | [v1.0.0](https://github.com/ikwzm/ZynqMP-FPGA-Debian12/tree/v1.0.0)
 
 Install
@@ -66,7 +66,7 @@ Install
   + [Ultra96](doc/install/ultra96.md)
   + [Ultra96-V2](doc/install/ultra96v2.md)
   + [KV260](doc/install/kv260.md)
-  + [KR260](doc/install/kr260.md)
+  + ~[KR260](doc/install/kr260.md)~
 
 
 Build 
