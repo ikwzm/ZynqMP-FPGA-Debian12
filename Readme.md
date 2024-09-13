@@ -28,7 +28,7 @@ This Repository provides a Linux Boot Image(U-boot, Kernel, Debian 12 RootFS) fo
   + PMU Firmware(Platform Management Unit Firmware)
   + BL31(ARM Trusted Firmware Boot Loader stage 3-1)
   + U-Boot xilinx-v2019.2 (customized)
-* Linux Kernel Version 6.1.108-zynqmp-fpga-generic
+* [Linux Kernel Version 6.1.108-zynqmp-fpga-generic](https://github.com/ikwzm/ZynqMP-FPGA-Linux-Kernel-6.1/tree/6.1.108-zynqmp-fpga-generic-1)
   + [linux-stable 6.1.108](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git//tag/?h=v6.1.108)
   + Patched equivalent to linux-xlnx v2023.1
   + Enable Device Tree Overlay with Configuration File System
@@ -36,7 +36,7 @@ This Repository provides a Linux Boot Image(U-boot, Kernel, Debian 12 RootFS) fo
   + Enable FPGA Bridge
   + Enable FPGA Reagion
   + Enable ATWILC3000 Linux Driver for Ultra96-V2
-* Debian12(bookworm) Root File System
+* Debian12.7(bookworm) Root File System
   + Installed build-essential
   + Installed device-tree-compiler
   + Installed ruby ruby-msgpack ruby-serialport
@@ -47,3 +47,56 @@ This Repository provides a Linux Boot Image(U-boot, Kernel, Debian 12 RootFS) fo
   + [fclkcfg    (FPGA Clock Configuration Device Driver)](https://github.com/ikwzm/fclkcfg)
   + [u-dma-buf  (User space mappable DMA Buffer)](https://github.com/ikwzm/udmabuf)
 
+Install
+------------------------------------------------------------------------------------
+
+* Install Boot Loader and Linux to SD-Card
+  + [UltraZed-EG-IOCC](doc/install/ultrazed-eg-iocc.md)
+  + [Ultra96](doc/install/ultra96.md)
+  + [Ultra96-V2](doc/install/ultra96v2.md)
+  + [KV260](doc/install/kv260.md)
+  + [KR260](doc/install/kr260.md)
+
+
+Build 
+------------------------------------------------------------------------------------
+
+* [Build Boot Loader for UltraZed-EG-IOCC](doc/build/boot-ultrazed-eg-iocc.md)
+* [Build Boot Loader for Ultra96](doc/build/boot-ultra96.md)
+* [Build Boot Loader for Ultra96-V2](doc/build/boot-ultra96v2.md)
+* [Build Linux Kernel](doc/build/linux-kernel-6.1.108-zynqmp-fpga-generic.md)
+* [Build Debian12 RootFS](doc/build/debian12-rootfs.md)
+
+
+Other Projects
+------------------------------------------------------------------------------------
+
+* https://github.com/ikwzm/ZynqMP-FPGA-Linux-Kernel-6.1
+  + Linux Kernel (v6.1.x) Image and Device Trees for Zynq MPSoC.
+* https://github.com/ikwzm/ZynqMP-U-Boot-Ultra96
+  + Boot Loader(U-Boot, FSBL, PMUFW,ATF) for Ultra96
+* https://github.com/ikwzm/ZynqMP-U-Boot-Ultra96-V2
+  + Boot Loader(U-Boot, FSBL, PMUFW,ATF) for Ultra96-V2
+* https://github.com/ikwzm/ZynqMP-U-Boot-UltraZed-EG-IOCC
+  + Boot Loader(U-Boot, FSBL, PMUFW,ATF) for UltraZed-EG-IOCC
+* https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console
+  + Linux Boot Image(U-boot, Kernel, Ubuntu 22.04-Console) for Ultra96/Ultra96-V2/Kv260
+* https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Desktop
+  + Linux Boot Image(U-boot, Kernel, Ubuntu 22.04-Desktop) for Ultra96/Ultra96-V2/Kv260
+
+
+Examples
+------------------------------------------------------------------------------------
+
+* https://github.com/ikwzm/ArgSort-Kv260
+  + ArgSort for Kv260
+* https://github.com/ikwzm/ArgSort-Ultra96
+  + ArgSort for Ultra96/Ultra96-V2
+* https://github.com/ikwzm/ZynqMP-FPGA-Linux-Example-2-Ultra96
+  + ZynqMP-FPGA-Linux Example (2) binary and test code for Ultra96
+* https://github.com/ikwzm/ZynqMP-FPGA-Linux-Example-0-UltraZed
+  + ZynqMP-FPGA-Linux Example (0) binary and test code for UltraZed-EG-IOCC
+* https://github.com/ikwzm/ZynqMP-FPGA-Linux-Example-2-UltraZed
+  + ZynqMP-FPGA-Linux Example (2) binary and test code for UltraZed-EG-IOCC
+* https://github.com/ikwzm/ZynqMP-FPGA-Linux-Example-3-UltraZed
+  + ZynqMP-FPGA-Linux Example (3) binary and test code for UltraZed-EG-IOCC
