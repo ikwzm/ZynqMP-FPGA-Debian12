@@ -10,7 +10,7 @@ This Repository provides a Linux Boot Image(U-boot, Kernel, Debian 12 RootFS) fo
 
 ### Note
 
-**The Linux Kernel Image and Debian11 RootFS provided in this repository is not official.**
+**The Linux Kernel Image and Debian12 RootFS provided in this repository is not official.**
 
 **I modified it to my liking. Please handle with care.**
 
@@ -91,10 +91,12 @@ Other Projects
   + Boot Loader(U-Boot, FSBL, PMUFW,ATF) for Ultra96-V2
 * https://github.com/ikwzm/ZynqMP-U-Boot-UltraZed-EG-IOCC
   + Boot Loader(U-Boot, FSBL, PMUFW,ATF) for UltraZed-EG-IOCC
+* https://github.com/ikwzm/ZynqMP-FPGA-Debian13
+  + Linux Boot Image(U-boot, Kernel, Debian13) for Ultra96/Ultra96-V2/Kv260/Kr260
 * https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Console
-  + Linux Boot Image(U-boot, Kernel, Ubuntu 22.04-Console) for Ultra96/Ultra96-V2/Kv260
+  + Linux Boot Image(U-boot, Kernel, Ubuntu 22.04-Console) for Ultra96/Ultra96-V2/Kv260/Kr260
 * https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu22.04-Desktop
-  + Linux Boot Image(U-boot, Kernel, Ubuntu 22.04-Desktop) for Ultra96/Ultra96-V2/Kv260
+  + Linux Boot Image(U-boot, Kernel, Ubuntu 22.04-Desktop) for Ultra96/Ultra96-V2/Kv260/Kr260
 
 
 Examples
