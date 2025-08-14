@@ -51,7 +51,7 @@ Release
 ------------------------------------------------------------------------------------
 
 The main branch contains only Readme.md.     
-For Linux Kernel and Debian11 RootFS, please refer to the respective release tag listed below.
+For Linux Kernel and Debian12 RootFS, please refer to the respective release tag listed below.
 
 | Release  | Released  | Debian Version | Linux Kernel Version           | Release Tag |
 |:---------|:----------|:---------------|:-------------------------------|:------------|
